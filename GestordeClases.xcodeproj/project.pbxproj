@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA61274A1A129C6D00BC2F53 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */; };
+		EA61274B1A129E5F00BC2F53 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EACA48A11A1298A6005E1F33 /* db.sqlite */; };
+		EA61274E1A12A04000BC2F53 /* SQLiteAccess+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */; };
+		EA6127511A12A22400BC2F53 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127501A12A22400BC2F53 /* Classes.m */; };
+		EA6127571A12A38B00BC2F53 /* ClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127561A12A38B00BC2F53 /* ClassCell.m */; };
+		EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA61275F1A12A51500BC2F53 /* ClassTableViewController.m */; };
+		EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127621A12A5BA00BC2F53 /* SQLiteAccess+Classes.m */; };
+		EA6127661A12AA9A00BC2F53 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127651A12AA9A00BC2F53 /* StudentViewController.m */; };
 		EACA48701A1280CE005E1F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA486F1A1280CE005E1F33 /* main.m */; };
 		EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48721A1280CE005E1F33 /* AppDelegate.m */; };
-		EACA48761A1280CE005E1F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48751A1280CE005E1F33 /* ViewController.m */; };
 		EACA48791A1280CE005E1F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EACA48771A1280CE005E1F33 /* Main.storyboard */; };
 		EACA487B1A1280CE005E1F33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EACA487A1A1280CE005E1F33 /* Images.xcassets */; };
 		EACA487E1A1280CE005E1F33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EACA487C1A1280CE005E1F33 /* LaunchScreen.xib */; };
 		EACA488A1A1280CE005E1F33 /* GestordeClasesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48891A1280CE005E1F33 /* GestordeClasesTests.m */; };
+		EACA48961A1286AB005E1F33 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48951A1286AB005E1F33 /* TableViewController.m */; };
+		EACA489A1A12873D005E1F33 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48991A12873D005E1F33 /* Student.m */; };
+		EACA489E1A128D59005E1F33 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA489D1A128D59005E1F33 /* TableViewCell.m */; };
+		EACA48A01A129849005E1F33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACA489F1A129849005E1F33 /* MapKit.framework */; };
+		EACA48A51A1298C6005E1F33 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48A41A1298C6005E1F33 /* SQLiteAccess.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +39,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EA61274C1A12A04000BC2F53 /* SQLiteAccess+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Student.h"; sourceTree = "<group>"; };
+		EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Student.m"; sourceTree = "<group>"; };
+		EA61274F1A12A22400BC2F53 /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		EA6127501A12A22400BC2F53 /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+		EA6127551A12A38B00BC2F53 /* ClassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCell.h; sourceTree = "<group>"; };
+		EA6127561A12A38B00BC2F53 /* ClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassCell.m; sourceTree = "<group>"; };
+		EA61275E1A12A51500BC2F53 /* ClassTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewController.h; sourceTree = "<group>"; };
+		EA61275F1A12A51500BC2F53 /* ClassTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewController.m; sourceTree = "<group>"; };
+		EA6127611A12A5BA00BC2F53 /* SQLiteAccess+Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Classes.h"; sourceTree = "<group>"; };
+		EA6127621A12A5BA00BC2F53 /* SQLiteAccess+Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Classes.m"; sourceTree = "<group>"; };
+		EA6127641A12AA9A00BC2F53 /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
+		EA6127651A12AA9A00BC2F53 /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
 		EACA486A1A1280CE005E1F33 /* GestordeClases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestordeClases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACA486E1A1280CE005E1F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EACA486F1A1280CE005E1F33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EACA48711A1280CE005E1F33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EACA48721A1280CE005E1F33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EACA48741A1280CE005E1F33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EACA48751A1280CE005E1F33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EACA48781A1280CE005E1F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EACA487A1A1280CE005E1F33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EACA487D1A1280CE005E1F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EACA48831A1280CE005E1F33 /* GestordeClasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GestordeClasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACA48881A1280CE005E1F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EACA48891A1280CE005E1F33 /* GestordeClasesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestordeClasesTests.m; sourceTree = "<group>"; };
+		EACA48941A1286AB005E1F33 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		EACA48951A1286AB005E1F33 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EACA48981A12873D005E1F33 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		EACA48991A12873D005E1F33 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		EACA489C1A128D59005E1F33 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		EACA489D1A128D59005E1F33 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		EACA489F1A129849005E1F33 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EACA48A11A1298A6005E1F33 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = "../../../Desktop/CursoSofttek-master/Libs/SQLite/db.sqlite"; sourceTree = "<group>"; };
+		EACA48A31A1298C6005E1F33 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLiteAccess.h; path = "../../../../Desktop/CursoSofttek-master/Libs/SQLite/SQLiteAccess.h"; sourceTree = "<group>"; };
+		EACA48A41A1298C6005E1F33 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLiteAccess.m; path = "../../../../Desktop/CursoSofttek-master/Libs/SQLite/SQLiteAccess.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA61274A1A129C6D00BC2F53 /* libsqlite3.dylib in Frameworks */,
+				EACA48A01A129849005E1F33 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,8 @@
 		EACA48611A1280CE005E1F33 = {
 			isa = PBXGroup;
 			children = (
+				EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */,
+				EACA489F1A129849005E1F33 /* MapKit.framework */,
 				EACA486C1A1280CE005E1F33 /* GestordeClases */,
 				EACA48861A1280CE005E1F33 /* GestordeClasesTests */,
 				EACA486B1A1280CE005E1F33 /* Products */,
@@ -81,10 +118,12 @@
 		EACA486C1A1280CE005E1F33 /* GestordeClases */ = {
 			isa = PBXGroup;
 			children = (
+				EACA48A21A1298AD005E1F33 /* SQLLite */,
+				EACA489B1A128D2C005E1F33 /* Cells */,
+				EACA48971A12871F005E1F33 /* Categories */,
+				EACA48931A128677005E1F33 /* Controller */,
 				EACA48711A1280CE005E1F33 /* AppDelegate.h */,
 				EACA48721A1280CE005E1F33 /* AppDelegate.m */,
-				EACA48741A1280CE005E1F33 /* ViewController.h */,
-				EACA48751A1280CE005E1F33 /* ViewController.m */,
 				EACA48771A1280CE005E1F33 /* Main.storyboard */,
 				EACA487A1A1280CE005E1F33 /* Images.xcassets */,
 				EACA487C1A1280CE005E1F33 /* LaunchScreen.xib */,
@@ -96,6 +135,7 @@
 		EACA486D1A1280CE005E1F33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EACA48A11A1298A6005E1F33 /* db.sqlite */,
 				EACA486E1A1280CE005E1F33 /* Info.plist */,
 				EACA486F1A1280CE005E1F33 /* main.m */,
 			);
@@ -117,6 +157,55 @@
 				EACA48881A1280CE005E1F33 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EACA48931A128677005E1F33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EACA48941A1286AB005E1F33 /* TableViewController.h */,
+				EACA48951A1286AB005E1F33 /* TableViewController.m */,
+				EA61275E1A12A51500BC2F53 /* ClassTableViewController.h */,
+				EA61275F1A12A51500BC2F53 /* ClassTableViewController.m */,
+				EA6127641A12AA9A00BC2F53 /* StudentViewController.h */,
+				EA6127651A12AA9A00BC2F53 /* StudentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EACA48971A12871F005E1F33 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EACA48981A12873D005E1F33 /* Student.h */,
+				EACA48991A12873D005E1F33 /* Student.m */,
+				EA61274C1A12A04000BC2F53 /* SQLiteAccess+Student.h */,
+				EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */,
+				EA61274F1A12A22400BC2F53 /* Classes.h */,
+				EA6127501A12A22400BC2F53 /* Classes.m */,
+				EA6127611A12A5BA00BC2F53 /* SQLiteAccess+Classes.h */,
+				EA6127621A12A5BA00BC2F53 /* SQLiteAccess+Classes.m */,
+			);
+			name = Categories;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EACA489B1A128D2C005E1F33 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EACA489C1A128D59005E1F33 /* TableViewCell.h */,
+				EACA489D1A128D59005E1F33 /* TableViewCell.m */,
+				EA6127551A12A38B00BC2F53 /* ClassCell.h */,
+				EA6127561A12A38B00BC2F53 /* ClassCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		EACA48A21A1298AD005E1F33 /* SQLLite */ = {
+			isa = PBXGroup;
+			children = (
+				EACA48A31A1298C6005E1F33 /* SQLiteAccess.h */,
+				EACA48A41A1298C6005E1F33 /* SQLiteAccess.m */,
+			);
+			path = SQLLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +257,11 @@
 				TargetAttributes = {
 					EACA48691A1280CE005E1F33 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EACA48821A1280CE005E1F33 = {
 						CreatedOnToolsVersion = 6.1;
@@ -202,6 +296,7 @@
 				EACA48791A1280CE005E1F33 /* Main.storyboard in Resources */,
 				EACA487E1A1280CE005E1F33 /* LaunchScreen.xib in Resources */,
 				EACA487B1A1280CE005E1F33 /* Images.xcassets in Resources */,
+				EA61274B1A129E5F00BC2F53 /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EACA48761A1280CE005E1F33 /* ViewController.m in Sources */,
+				EA6127661A12AA9A00BC2F53 /* StudentViewController.m in Sources */,
+				EA6127571A12A38B00BC2F53 /* ClassCell.m in Sources */,
 				EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */,
+				EACA48A51A1298C6005E1F33 /* SQLiteAccess.m in Sources */,
+				EA6127511A12A22400BC2F53 /* Classes.m in Sources */,
+				EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */,
+				EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */,
+				EACA48961A1286AB005E1F33 /* TableViewController.m in Sources */,
 				EACA48701A1280CE005E1F33 /* main.m in Sources */,
+				EACA489E1A128D59005E1F33 /* TableViewCell.m in Sources */,
+				EACA489A1A12873D005E1F33 /* Student.m in Sources */,
+				EA61274E1A12A04000BC2F53 /* SQLiteAccess+Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +516,7 @@
 				EACA488F1A1280CE005E1F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EACA48901A1280CE005E1F33 /* Build configuration list for PBXNativeTarget "GestordeClasesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +525,7 @@
 				EACA48921A1280CE005E1F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
