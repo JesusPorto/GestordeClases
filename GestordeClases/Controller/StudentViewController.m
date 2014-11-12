@@ -8,6 +8,7 @@
 
 #import "StudentViewController.h"
 #import "Student.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface StudentViewController ()
 
@@ -23,6 +24,10 @@
     [self.LastNameLabel setText:_std.LastName];
     [self.CityLabel setText:_std.city];
     [self.emailLabel setText:_std.email];
+    NSURL *url = [NSURL URLWithString:@"http://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg"];
+    NSURL *urlPlaceho = [NSURL URLWithString:@"http://www.mytreedb.com/uploads/mytreedb/loader/ajax_loader_red_512.gif"];
+    UIImage* img = [UIImage imageWithData:[NSData dataWithContentsOfURL:urlPlaceho]];
+    [self.AvatarImageView setImageWithURL:url placeholderImage:img];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +41,15 @@
 
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    /*
+    [super viewDidAppear:animated];
+    NSURL *url = [NSURL URLWithString:@"http://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg"];
+    
+    UIImage* img = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+    [self.AvatarImageView setImage: img];
+    */
+}
 
 #pragma mark - Navigation
 

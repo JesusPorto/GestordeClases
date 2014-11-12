@@ -10,6 +10,17 @@
 
 
 @implementation Student
+-(id)initWithDictionary:(NSDictionary*)dic{
+    self = [super init];
+    if (self){
+        self.name = [dic objectForKey:@"nombre"];
+        self.city = [dic objectForKey:@"ciudad"];
+        self.LastName = [dic objectForKey:@"apellidos"];
+        self.email = [dic objectForKey:@"email"];
+        self.avatar = [dic objectForKey:@"avatar_url"];
+    }
+    return self;
+}
 
 @end
 

@@ -10,17 +10,14 @@
 
 @interface Student : NSObject
 
+-(id)initWithDictionary:(NSDictionary*)dic;
+
 @property (assign) int *Student_id;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *city;
 @property (nonatomic,strong) NSString *LastName;
 @property (nonatomic,strong) NSString *email;
 @property (nonatomic,strong) NSString *avatar;
-
-- (id) init;
-
-
-
 
 
 @end

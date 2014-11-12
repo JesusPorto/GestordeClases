@@ -7,7 +7,8 @@
 //
 
 #import "SQLiteAccess.h"
+#import "Classes.h"
 
 @interface SQLiteAccess (Classes)
-
++(NSArray*)GetClasses;
 @end

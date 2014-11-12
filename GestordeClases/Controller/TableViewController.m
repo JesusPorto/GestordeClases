@@ -14,7 +14,7 @@
 
 @interface TableViewController ()
 
-@property (nonatomic,strong) NSMutableArray *students;
+@property (nonatomic,strong) NSArray *students;
 
 @end
 
@@ -24,6 +24,7 @@
     [super viewDidLoad];
     
     _students = [NSMutableArray.alloc init];
+    _students = [SQLiteAccess SelectAll];
     /*
     for(int x=0;x<100;x++){
         Student *student = [Student.alloc init];
@@ -32,16 +33,7 @@
         [_students addObject:student];
     }
      */
-    NSArray *tab = [SQLiteAccess selectManyRowsWithSQL:@"SELECT * FROM ALUMNOS"];
-    for(NSDictionary *dict in tab) {
-        Student *student = [Student.alloc init];
-        student.name = [dict objectForKey:@"nombre"];
-        student.city = [dict objectForKey:@"ciudad"];
-        student.LastName = [dict objectForKey:@"apellidos"];
-        student.email = [dict objectForKey:@"email"];
-        student.avatar = [dict objectForKey:@"avatar_url"];
-        [_students addObject:student];
-    }
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -119,14 +111,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    UITableViewCell *nextScreen = sender;
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:nextScreen];
-    StudentViewController  *stController = [segue destinationViewController];
     
-    Student *tmpStud = [_students objectAtIndex:indexPath.row];
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
     
-    
-    [stController setStudent:tmpStud];
+   Student *tmpStud = [_students objectAtIndex:indexPath.row];
+        StudentViewController  *stController = [segue destinationViewController];
+   
+    [stController setStudent:[SQLiteAccess selectByEmail:tmpStud.email]];
 }
 
 

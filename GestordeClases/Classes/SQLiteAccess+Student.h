@@ -7,7 +7,9 @@
 //
 
 #import "SQLiteAccess.h"
+#import "Student.h"
 
 @interface SQLiteAccess (Student)
-
++(NSArray *)SelectAll;
++(Student *)selectByEmail:(NSString *)aEmail;
 @end

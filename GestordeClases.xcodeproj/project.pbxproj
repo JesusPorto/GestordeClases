@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FCC4934E4B2C7DE6829F198 /* libPods-GestordeClases.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6166DBDE484A28F1B8058850 /* libPods-GestordeClases.a */; };
 		EA61274A1A129C6D00BC2F53 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */; };
-		EA61274B1A129E5F00BC2F53 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EACA48A11A1298A6005E1F33 /* db.sqlite */; };
 		EA61274E1A12A04000BC2F53 /* SQLiteAccess+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */; };
 		EA6127511A12A22400BC2F53 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127501A12A22400BC2F53 /* Classes.m */; };
 		EA6127571A12A38B00BC2F53 /* ClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127561A12A38B00BC2F53 /* ClassCell.m */; };
@@ -25,7 +25,9 @@
 		EACA489A1A12873D005E1F33 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48991A12873D005E1F33 /* Student.m */; };
 		EACA489E1A128D59005E1F33 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA489D1A128D59005E1F33 /* TableViewCell.m */; };
 		EACA48A01A129849005E1F33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACA489F1A129849005E1F33 /* MapKit.framework */; };
-		EACA48A51A1298C6005E1F33 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48A41A1298C6005E1F33 /* SQLiteAccess.m */; };
+		FD84980B1A13D15400446A13 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = FD84980A1A13D15400446A13 /* SQLiteAccess.m */; };
+		FD84980D1A13D16300446A13 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FD84980C1A13D16300446A13 /* db.sqlite */; };
+		FDD6B3621A13EB1A00DD3583 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6166DBDE484A28F1B8058850 /* libPods-GestordeClases.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GestordeClases.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF66B6E932F01BF7C9F5222 /* Pods-GestordeClases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestordeClases.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestordeClases/Pods-GestordeClases.debug.xcconfig"; sourceTree = "<group>"; };
 		EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EA61274C1A12A04000BC2F53 /* SQLiteAccess+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Student.h"; sourceTree = "<group>"; };
 		EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Student.m"; sourceTree = "<group>"; };
@@ -70,9 +74,12 @@
 		EACA489C1A128D59005E1F33 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		EACA489D1A128D59005E1F33 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		EACA489F1A129849005E1F33 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		EACA48A11A1298A6005E1F33 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = "../../../Desktop/CursoSofttek-master/Libs/SQLite/db.sqlite"; sourceTree = "<group>"; };
-		EACA48A31A1298C6005E1F33 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLiteAccess.h; path = "../../../../Desktop/CursoSofttek-master/Libs/SQLite/SQLiteAccess.h"; sourceTree = "<group>"; };
-		EACA48A41A1298C6005E1F33 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLiteAccess.m; path = "../../../../Desktop/CursoSofttek-master/Libs/SQLite/SQLiteAccess.m"; sourceTree = "<group>"; };
+		EACC00C810AF2E511F45DC88 /* Pods-GestordeClases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestordeClases.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestordeClases/Pods-GestordeClases.release.xcconfig"; sourceTree = "<group>"; };
+		FD8498091A13D15400446A13 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
+		FD84980A1A13D15400446A13 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteAccess.m; sourceTree = "<group>"; };
+		FD84980C1A13D16300446A13 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		FDD6B3601A13EB1A00DD3583 /* BaseXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXmlParser.h; sourceTree = "<group>"; };
+		FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 			files = (
 				EA61274A1A129C6D00BC2F53 /* libsqlite3.dylib in Frameworks */,
 				EACA48A01A129849005E1F33 /* MapKit.framework in Frameworks */,
+				3FCC4934E4B2C7DE6829F198 /* libPods-GestordeClases.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		409E5A1299DD930E8C5E7468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6166DBDE484A28F1B8058850 /* libPods-GestordeClases.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88945A11AEDFA137017FF0F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCF66B6E932F01BF7C9F5222 /* Pods-GestordeClases.debug.xcconfig */,
+				EACC00C810AF2E511F45DC88 /* Pods-GestordeClases.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EACA48611A1280CE005E1F33 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,8 @@
 				EACA486C1A1280CE005E1F33 /* GestordeClases */,
 				EACA48861A1280CE005E1F33 /* GestordeClasesTests */,
 				EACA486B1A1280CE005E1F33 /* Products */,
+				88945A11AEDFA137017FF0F1 /* Pods */,
+				409E5A1299DD930E8C5E7468 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +145,7 @@
 		EACA486C1A1280CE005E1F33 /* GestordeClases */ = {
 			isa = PBXGroup;
 			children = (
+				FDD6B35F1A13EAD700DD3583 /* Webservices */,
 				EACA48A21A1298AD005E1F33 /* SQLLite */,
 				EACA489B1A128D2C005E1F33 /* Cells */,
 				EACA48971A12871F005E1F33 /* Categories */,
@@ -135,7 +163,7 @@
 		EACA486D1A1280CE005E1F33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EACA48A11A1298A6005E1F33 /* db.sqlite */,
+				FD84980C1A13D16300446A13 /* db.sqlite */,
 				EACA486E1A1280CE005E1F33 /* Info.plist */,
 				EACA486F1A1280CE005E1F33 /* main.m */,
 			);
@@ -202,10 +230,19 @@
 		EACA48A21A1298AD005E1F33 /* SQLLite */ = {
 			isa = PBXGroup;
 			children = (
-				EACA48A31A1298C6005E1F33 /* SQLiteAccess.h */,
-				EACA48A41A1298C6005E1F33 /* SQLiteAccess.m */,
+				FD8498091A13D15400446A13 /* SQLiteAccess.h */,
+				FD84980A1A13D15400446A13 /* SQLiteAccess.m */,
 			);
 			path = SQLLite;
+			sourceTree = "<group>";
+		};
+		FDD6B35F1A13EAD700DD3583 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				FDD6B3601A13EB1A00DD3583 /* BaseXmlParser.h */,
+				FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */,
+			);
+			path = Webservices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EACA488D1A1280CE005E1F33 /* Build configuration list for PBXNativeTarget "GestordeClases" */;
 			buildPhases = (
+				B5633E30E5444B9DB078CBDB /* Check Pods Manifest.lock */,
 				EACA48661A1280CE005E1F33 /* Sources */,
 				EACA48671A1280CE005E1F33 /* Frameworks */,
 				EACA48681A1280CE005E1F33 /* Resources */,
+				5B0C10D225ED74C161CF6573 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,7 +335,7 @@
 				EACA48791A1280CE005E1F33 /* Main.storyboard in Resources */,
 				EACA487E1A1280CE005E1F33 /* LaunchScreen.xib in Resources */,
 				EACA487B1A1280CE005E1F33 /* Images.xcassets in Resources */,
-				EA61274B1A129E5F00BC2F53 /* db.sqlite in Resources */,
+				FD84980D1A13D16300446A13 /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,15 +348,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B0C10D225ED74C161CF6573 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GestordeClases/Pods-GestordeClases-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5633E30E5444B9DB078CBDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EACA48661A1280CE005E1F33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA6127661A12AA9A00BC2F53 /* StudentViewController.m in Sources */,
+				FD84980B1A13D15400446A13 /* SQLiteAccess.m in Sources */,
 				EA6127571A12A38B00BC2F53 /* ClassCell.m in Sources */,
 				EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */,
-				EACA48A51A1298C6005E1F33 /* SQLiteAccess.m in Sources */,
 				EA6127511A12A22400BC2F53 /* Classes.m in Sources */,
 				EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */,
 				EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */,
@@ -326,6 +398,7 @@
 				EACA489E1A128D59005E1F33 /* TableViewCell.m in Sources */,
 				EACA489A1A12873D005E1F33 /* Student.m in Sources */,
 				EA61274E1A12A04000BC2F53 /* SQLiteAccess+Student.m in Sources */,
+				FDD6B3621A13EB1A00DD3583 /* BaseXmlParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +518,7 @@
 		};
 		EACA488E1A1280CE005E1F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF66B6E932F01BF7C9F5222 /* Pods-GestordeClases.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GestordeClases/Info.plist;
@@ -455,6 +529,7 @@
 		};
 		EACA488F1A1280CE005E1F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACC00C810AF2E511F45DC88 /* Pods-GestordeClases.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GestordeClases/Info.plist;
