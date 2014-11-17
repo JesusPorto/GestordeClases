@@ -25,6 +25,7 @@
 		EACA489A1A12873D005E1F33 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48991A12873D005E1F33 /* Student.m */; };
 		EACA489E1A128D59005E1F33 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA489D1A128D59005E1F33 /* TableViewCell.m */; };
 		EACA48A01A129849005E1F33 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACA489F1A129849005E1F33 /* MapKit.framework */; };
+		FD08CED01A1A686A007C10B7 /* StudentXmlClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FD08CECF1A1A686A007C10B7 /* StudentXmlClient.m */; };
 		FD84980B1A13D15400446A13 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = FD84980A1A13D15400446A13 /* SQLiteAccess.m */; };
 		FD84980D1A13D16300446A13 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FD84980C1A13D16300446A13 /* db.sqlite */; };
 		FDD6B3621A13EB1A00DD3583 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */; };
@@ -75,6 +76,9 @@
 		EACA489D1A128D59005E1F33 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		EACA489F1A129849005E1F33 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EACC00C810AF2E511F45DC88 /* Pods-GestordeClases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestordeClases.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestordeClases/Pods-GestordeClases.release.xcconfig"; sourceTree = "<group>"; };
+		FD08CECE1A1A686A007C10B7 /* StudentXmlClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentXmlClient.h; sourceTree = "<group>"; };
+		FD08CECF1A1A686A007C10B7 /* StudentXmlClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentXmlClient.m; sourceTree = "<group>"; };
+		FD1C2D0C1A1A800F001D79F0 /* SWNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWNetworkDelegate.h; sourceTree = "<group>"; };
 		FD8498091A13D15400446A13 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
 		FD84980A1A13D15400446A13 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteAccess.m; sourceTree = "<group>"; };
 		FD84980C1A13D16300446A13 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
@@ -241,6 +245,9 @@
 			children = (
 				FDD6B3601A13EB1A00DD3583 /* BaseXmlParser.h */,
 				FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */,
+				FD08CECE1A1A686A007C10B7 /* StudentXmlClient.h */,
+				FD08CECF1A1A686A007C10B7 /* StudentXmlClient.m */,
+				FD1C2D0C1A1A800F001D79F0 /* SWNetworkDelegate.h */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -392,6 +399,7 @@
 				EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */,
 				EA6127511A12A22400BC2F53 /* Classes.m in Sources */,
 				EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */,
+				FD08CED01A1A686A007C10B7 /* StudentXmlClient.m in Sources */,
 				EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */,
 				EACA48961A1286AB005E1F33 /* TableViewController.m in Sources */,
 				EACA48701A1280CE005E1F33 /* main.m in Sources */,

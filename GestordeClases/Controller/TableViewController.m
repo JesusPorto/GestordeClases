@@ -11,6 +11,8 @@
 #import "TableViewCell.h"
 #import "SQLiteAccess+Student.h"
 #import "StudentViewController.h"
+#import "StudentXmlClient.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface TableViewController ()
 
@@ -33,7 +35,12 @@
         [_students addObject:student];
     }
      */
-
+    _students = NSMutableArray.new;
+    StudentXmlClient *ws = [StudentXmlClient new];
+    
+    [ws getStudentsWithController:self];
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [HUD setLabelText:@"Loading"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -120,5 +127,23 @@
     [stController setStudent:[SQLiteAccess selectByEmail:tmpStud.email]];
 }
 
+
+
+-(void)receiveData:(NSMutableArray *)anArray{
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)",__PRETTY_FUNCTION__,__LINE__);
+#endif
+    _students = [NSMutableArray arrayWithArray:anArray];
+    [self.tableView reloadData];
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+}
+-(void)dataFailure:(NSString *)anErrorMessage{
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)",__PRETTY_FUNCTION__,__LINE__);
+#endif
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:anErrorMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel", nil];
+    [alert show];
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+}
 
 @end
