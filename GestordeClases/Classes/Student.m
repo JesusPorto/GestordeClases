@@ -18,6 +18,19 @@
         self.LastName = [dic objectForKey:@"apellidos"];
         self.email = [dic objectForKey:@"email"];
         self.avatar = [dic objectForKey:@"avatar_url"];
+        //self.Student_id = [dic objectForKey:@"id"];
+    }
+    return self;
+}
+-(id)initWithDictionaryForJSon:(NSDictionary*)dic{
+    self = [super init];
+    if (self){
+        self.name = [dic objectForKey:@"name"];
+        self.city = [dic objectForKey:@"city"];
+        self.LastName = [dic objectForKey:@"apellidos"];
+        self.email = [dic objectForKey:@"email"];
+        self.avatar = [dic objectForKey:@"avatar_url"];
+        //self.Student_id = [dic objectForKey:@"id"];
     }
     return self;
 }

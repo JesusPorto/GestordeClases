@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Student.h"
+#import "SWNetworkDelegate.h"
 
-@interface StudentViewController : UIViewController
+@interface StudentViewController : UIViewController <SWNetworkDelegate>
+
 @property (weak, nonatomic) IBOutlet UIImageView *AvatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *NameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *LastNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *CityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
--(void)setStudent:(Student*)stud;
+@property (assign) int studentID;
 @end

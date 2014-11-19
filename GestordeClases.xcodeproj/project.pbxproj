@@ -29,6 +29,7 @@
 		FD84980B1A13D15400446A13 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = FD84980A1A13D15400446A13 /* SQLiteAccess.m */; };
 		FD84980D1A13D16300446A13 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FD84980C1A13D16300446A13 /* db.sqlite */; };
 		FDD6B3621A13EB1A00DD3583 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */; };
+		FDF90E1E1A1D16DA00C6D0F8 /* StudentJsonClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF90E1D1A1D16DA00C6D0F8 /* StudentJsonClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,9 @@
 		FD84980C1A13D16300446A13 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		FDD6B3601A13EB1A00DD3583 /* BaseXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXmlParser.h; sourceTree = "<group>"; };
 		FDD6B3611A13EB1A00DD3583 /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
+		FDF90E191A1D131D00C6D0F8 /* GestorDeClases.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestorDeClases.pch; sourceTree = "<group>"; };
+		FDF90E1C1A1D16DA00C6D0F8 /* StudentJsonClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentJsonClient.h; sourceTree = "<group>"; };
+		FDF90E1D1A1D16DA00C6D0F8 /* StudentJsonClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentJsonClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 				EACA487A1A1280CE005E1F33 /* Images.xcassets */,
 				EACA487C1A1280CE005E1F33 /* LaunchScreen.xib */,
 				EACA486D1A1280CE005E1F33 /* Supporting Files */,
+				FDF90E191A1D131D00C6D0F8 /* GestorDeClases.pch */,
 			);
 			path = GestordeClases;
 			sourceTree = "<group>";
@@ -248,6 +253,8 @@
 				FD08CECE1A1A686A007C10B7 /* StudentXmlClient.h */,
 				FD08CECF1A1A686A007C10B7 /* StudentXmlClient.m */,
 				FD1C2D0C1A1A800F001D79F0 /* SWNetworkDelegate.h */,
+				FDF90E1C1A1D16DA00C6D0F8 /* StudentJsonClient.h */,
+				FDF90E1D1A1D16DA00C6D0F8 /* StudentJsonClient.m */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -398,6 +405,7 @@
 				EA6127571A12A38B00BC2F53 /* ClassCell.m in Sources */,
 				EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */,
 				EA6127511A12A22400BC2F53 /* Classes.m in Sources */,
+				FDF90E1E1A1D16DA00C6D0F8 /* StudentJsonClient.m in Sources */,
 				EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */,
 				FD08CED01A1A686A007C10B7 /* StudentXmlClient.m in Sources */,
 				EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */,

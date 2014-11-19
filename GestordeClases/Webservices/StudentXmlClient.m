@@ -118,6 +118,9 @@
     if ([elementName isEqualToString:@"image-url"]) {
          _t.avatar = _contentsOfElement;
     }
+    if ([elementName isEqualToString:@"id"]) {
+        _t.Student_id = [_contentsOfElement intValue];
+    }
     
     if([elementName isEqualToString:@"stundent"]){
         [_students addObject:_t];

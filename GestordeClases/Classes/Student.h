@@ -11,8 +11,9 @@
 @interface Student : NSObject
 
 -(id)initWithDictionary:(NSDictionary*)dic;
+-(id)initWithDictionaryForJSon:(NSDictionary*)dic;
 
-@property (assign) int *Student_id;
+@property (assign) int Student_id;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *city;
 @property (nonatomic,strong) NSString *LastName;

@@ -124,7 +124,7 @@
    Student *tmpStud = [_students objectAtIndex:indexPath.row];
         StudentViewController  *stController = [segue destinationViewController];
    
-    [stController setStudent:[SQLiteAccess selectByEmail:tmpStud.email]];
+    [stController setStudentID:tmpStud.Student_id];
 }
 
 

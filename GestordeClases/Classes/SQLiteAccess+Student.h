@@ -11,5 +11,5 @@
 
 @interface SQLiteAccess (Student)
 +(NSArray *)SelectAll;
-+(Student *)selectByEmail:(NSString *)aEmail;
++(int)selectByEmail:(NSString *)aEmail;
 @end
