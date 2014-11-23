@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FCC4934E4B2C7DE6829F198 /* libPods-GestordeClases.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6166DBDE484A28F1B8058850 /* libPods-GestordeClases.a */; };
+		EA31074C1A22060C001D73A6 /* AddStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31074B1A22060C001D73A6 /* AddStudentViewController.m */; };
 		EA61274A1A129C6D00BC2F53 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */; };
 		EA61274E1A12A04000BC2F53 /* SQLiteAccess+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */; };
 		EA6127511A12A22400BC2F53 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127501A12A22400BC2F53 /* Classes.m */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		6166DBDE484A28F1B8058850 /* libPods-GestordeClases.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GestordeClases.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF66B6E932F01BF7C9F5222 /* Pods-GestordeClases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestordeClases.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestordeClases/Pods-GestordeClases.debug.xcconfig"; sourceTree = "<group>"; };
+		EA31074A1A22060C001D73A6 /* AddStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStudentViewController.h; sourceTree = "<group>"; };
+		EA31074B1A22060C001D73A6 /* AddStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudentViewController.m; sourceTree = "<group>"; };
 		EA6127491A129C6D00BC2F53 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EA61274C1A12A04000BC2F53 /* SQLiteAccess+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Student.h"; sourceTree = "<group>"; };
 		EA61274D1A12A04000BC2F53 /* SQLiteAccess+Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Student.m"; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				EA61275F1A12A51500BC2F53 /* ClassTableViewController.m */,
 				EA6127641A12AA9A00BC2F53 /* StudentViewController.h */,
 				EA6127651A12AA9A00BC2F53 /* StudentViewController.m */,
+				EA31074A1A22060C001D73A6 /* AddStudentViewController.h */,
+				EA31074B1A22060C001D73A6 /* AddStudentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				FD84980B1A13D15400446A13 /* SQLiteAccess.m in Sources */,
 				EA6127571A12A38B00BC2F53 /* ClassCell.m in Sources */,
 				EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */,
+				EA31074C1A22060C001D73A6 /* AddStudentViewController.m in Sources */,
 				EA6127511A12A22400BC2F53 /* Classes.m in Sources */,
 				FDF90E1E1A1D16DA00C6D0F8 /* StudentJsonClient.m in Sources */,
 				EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */,

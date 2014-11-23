@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fQN-lu-gys">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fQN-lu-gys">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -71,14 +71,125 @@
                             <outlet property="delegate" destination="XXt-9H-FXR" id="bDb-c6-I2a"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Lista de alumnos" id="YIh-ms-IUl"/>
+                    <navigationItem key="navigationItem" title="Lista de alumnos" id="YIh-ms-IUl">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="THO-8i-Wtj">
+                            <connections>
+                                <segue destination="iST-Xj-TGI" kind="push" id="eV0-qw-btU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGc-Uu-Q6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="613.5" y="-756.5"/>
         </scene>
-        <!--Student View Controller-->
+        <!--Añadir Alumno-->
+        <scene sceneID="cE8-IV-zsp">
+            <objects>
+                <viewController id="iST-Xj-TGI" customClass="AddStudentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Se-qa-D27"/>
+                        <viewControllerLayoutGuide type="bottom" id="iQ5-j6-bDa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eEd-bs-6fp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-69-NTt">
+                                <rect key="frame" x="16" y="111" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ciudad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neC-fE-tDK">
+                                <rect key="frame" x="16" y="186" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqS-Id-IoN">
+                                <rect key="frame" x="16" y="224" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkx-9J-5YY">
+                                <rect key="frame" x="138" y="107" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QJ-yj-s2r">
+                                <rect key="frame" x="138" y="145" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-xg-fDZ">
+                                <rect key="frame" x="138" y="183" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ena-q8-gYL">
+                                <rect key="frame" x="138" y="221" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLd-jq-fk7">
+                                <rect key="frame" x="138" y="259" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Avatar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbY-KU-8Si">
+                                <rect key="frame" x="16" y="268" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-14-83Y">
+                                <rect key="frame" x="32" y="357" width="114" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                                <state key="normal" title="Guardar alumno">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doUIButtonSaveStudent:" destination="iST-Xj-TGI" eventType="touchDown" id="zyM-UJ-yHo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwO-Ja-Tq1">
+                                <rect key="frame" x="208" y="357" width="125" height="30"/>
+                                <state key="normal" title="Limpiar formulario">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doUIButtonClean:" destination="iST-Xj-TGI" eventType="touchDown" id="Gbx-nC-hjY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellidos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yar-Yu-K6I">
+                                <rect key="frame" x="16" y="148" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Añadir Alumno" id="QqI-t3-wRe"/>
+                    <connections>
+                        <outlet property="UIButtonClean" destination="cwO-Ja-Tq1" id="IlK-yS-H5c"/>
+                        <outlet property="UIButtonSaveStudent" destination="S5e-14-83Y" id="pxD-po-vOf"/>
+                        <outlet property="UILabelAvatar" destination="kLd-jq-fk7" id="O4K-Jd-bbJ"/>
+                        <outlet property="UILabelCity" destination="M4M-xg-fDZ" id="EAB-ss-EUy"/>
+                        <outlet property="UILabelLastName" destination="4QJ-yj-s2r" id="3VL-nA-aOC"/>
+                        <outlet property="UILabelMail" destination="Ena-q8-gYL" id="SQz-oZ-Mj9"/>
+                        <outlet property="UILabelName" destination="hkx-9J-5YY" id="mqf-BI-VLe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQh-cd-3FT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.5" y="-756.5"/>
+        </scene>
+        <!--Alumno-->
         <scene sceneID="egV-Eu-P2b">
             <objects>
                 <viewController id="DVU-dj-47R" customClass="StudentViewController" sceneMemberID="viewController">
@@ -127,7 +238,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="woK-kn-17a"/>
+                    <navigationItem key="navigationItem" title="Alumno" id="tgh-An-wYU">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="CmB-YI-Tav">
+                            <connections>
+                                <segue destination="iST-Xj-TGI" kind="push" id="j8q-fx-pKb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="AvatarImageView" destination="iWq-2p-ibO" id="Xqq-hg-zl8"/>
@@ -139,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Tv-Rp-5eZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258.5" y="-756.5"/>
+            <point key="canvasLocation" x="1247.5" y="-300.5"/>
         </scene>
         <!--Clases-->
         <scene sceneID="WZd-rc-nP6">
@@ -351,4 +468,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="eV0-qw-btU"/>
+    </inferredMetricsTieBreakers>
 </document>
