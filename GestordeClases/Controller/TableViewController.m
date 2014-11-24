@@ -119,12 +119,18 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-    
-   Student *tmpStud = [_students objectAtIndex:indexPath.row];
+    //Check identifier
+    if ([[sender identifier]  isEqual: @"AddFromTable"]) {
+        
+    }else{
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        
+        Student *tmpStud = [_students objectAtIndex:indexPath.row];
         StudentViewController  *stController = [segue destinationViewController];
-   
-    [stController setStudentID:tmpStud.Student_id];
+        
+        [stController setStudentID:tmpStud.Student_id];
+    }
+
 }
 
 
