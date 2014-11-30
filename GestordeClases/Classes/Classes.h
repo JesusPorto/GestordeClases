@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Classes : NSObject
+-(id)initWithDictionaryForJSon:(NSDictionary*)dic;
+
+@property (assign) int id_class;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *descr;
 @property (nonatomic,strong) NSString *start;

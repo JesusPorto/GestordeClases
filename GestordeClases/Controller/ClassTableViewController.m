@@ -10,6 +10,11 @@
 #import "Classes.h"
 #import "ClassCell.h"
 #import "SQLiteAccess+Classes.h"
+#import "Classes.h"
+#import "ClassesJSonClient.h"
+#import "SWNetworkDelegate.h"
+#import <AFNetworking/AFNetworking.h>
+#import "ClassViewController.h"
 
 @interface ClassTableViewController ()
 
@@ -21,8 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _clases = [SQLiteAccess GetClasses ];
-    
+    //_clases = [SQLiteAccess GetClasses ];
+    ClassesJSonClient *ws = ClassesJSonClient.new;
+    [ws getAllClassesForController:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +60,19 @@
     [cell.FinishClassLabel setText:tmpClass.end];
     
     return cell;
+}
+
+
+-(void)receiveData:(NSMutableArray *)anArray{
+    
+}
+-(void)dataFailure:(NSString *)anErrorMessage{
+    
+}
+
+-(void)receiveAllClasses:(NSMutableArray *)aClasses{
+    _clases = aClasses;
+    [self.tableView reloadData];
 }
 
 
@@ -91,14 +110,18 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    
+    Classes *tmpClass = [_clases objectAtIndex:indexPath.row];
+    ClassViewController  *stController = [segue destinationViewController];
+    [stController setIdToLoad:tmpClass.id_class];
 }
-*/
+
 
 @end

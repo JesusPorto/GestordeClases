@@ -120,9 +120,7 @@
     // Pass the selected object to the new view controller.
     
     //Check identifier
-    if ([[sender identifier]  isEqual: @"AddFromTable"]) {
-        
-    }else{
+    if ([[segue identifier] isEqual:@"ViewAlumn"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         
         Student *tmpStud = [_students objectAtIndex:indexPath.row];

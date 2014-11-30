@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWNetworkDelegate.h"
 
-@interface ClassTableViewController : UITableViewController
+@interface ClassTableViewController : UITableViewController <SWNetworkDelegate>
 
 @end

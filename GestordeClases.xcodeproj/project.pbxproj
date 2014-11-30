@@ -16,6 +16,8 @@
 		EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA61275F1A12A51500BC2F53 /* ClassTableViewController.m */; };
 		EA6127631A12A5BA00BC2F53 /* SQLiteAccess+Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127621A12A5BA00BC2F53 /* SQLiteAccess+Classes.m */; };
 		EA6127661A12AA9A00BC2F53 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6127651A12AA9A00BC2F53 /* StudentViewController.m */; };
+		EA8DF2191A2B180000CDC435 /* ClassesJSonClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8DF2181A2B180000CDC435 /* ClassesJSonClient.m */; };
+		EA8DF21C1A2B283E00CDC435 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8DF21B1A2B283E00CDC435 /* ClassViewController.m */; };
 		EACA48701A1280CE005E1F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA486F1A1280CE005E1F33 /* main.m */; };
 		EACA48731A1280CE005E1F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EACA48721A1280CE005E1F33 /* AppDelegate.m */; };
 		EACA48791A1280CE005E1F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EACA48771A1280CE005E1F33 /* Main.storyboard */; };
@@ -61,6 +63,10 @@
 		EA6127621A12A5BA00BC2F53 /* SQLiteAccess+Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Classes.m"; sourceTree = "<group>"; };
 		EA6127641A12AA9A00BC2F53 /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
 		EA6127651A12AA9A00BC2F53 /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
+		EA8DF2171A2B180000CDC435 /* ClassesJSonClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesJSonClient.h; sourceTree = "<group>"; };
+		EA8DF2181A2B180000CDC435 /* ClassesJSonClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesJSonClient.m; sourceTree = "<group>"; };
+		EA8DF21A1A2B283E00CDC435 /* ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		EA8DF21B1A2B283E00CDC435 /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
 		EACA486A1A1280CE005E1F33 /* GestordeClases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestordeClases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACA486E1A1280CE005E1F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EACA486F1A1280CE005E1F33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -210,6 +216,8 @@
 				EA6127651A12AA9A00BC2F53 /* StudentViewController.m */,
 				EA31074A1A22060C001D73A6 /* AddStudentViewController.h */,
 				EA31074B1A22060C001D73A6 /* AddStudentViewController.m */,
+				EA8DF21A1A2B283E00CDC435 /* ClassViewController.h */,
+				EA8DF21B1A2B283E00CDC435 /* ClassViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +268,8 @@
 				FD1C2D0C1A1A800F001D79F0 /* SWNetworkDelegate.h */,
 				FDF90E1C1A1D16DA00C6D0F8 /* StudentJsonClient.h */,
 				FDF90E1D1A1D16DA00C6D0F8 /* StudentJsonClient.m */,
+				EA8DF2171A2B180000CDC435 /* ClassesJSonClient.h */,
+				EA8DF2181A2B180000CDC435 /* ClassesJSonClient.m */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -416,9 +426,11 @@
 				FD08CED01A1A686A007C10B7 /* StudentXmlClient.m in Sources */,
 				EA6127601A12A51500BC2F53 /* ClassTableViewController.m in Sources */,
 				EACA48961A1286AB005E1F33 /* TableViewController.m in Sources */,
+				EA8DF21C1A2B283E00CDC435 /* ClassViewController.m in Sources */,
 				EACA48701A1280CE005E1F33 /* main.m in Sources */,
 				EACA489E1A128D59005E1F33 /* TableViewCell.m in Sources */,
 				EACA489A1A12873D005E1F33 /* Student.m in Sources */,
+				EA8DF2191A2B180000CDC435 /* ClassesJSonClient.m in Sources */,
 				EA61274E1A12A04000BC2F53 /* SQLiteAccess+Student.m in Sources */,
 				FDD6B3621A13EB1A00DD3583 /* BaseXmlParser.m in Sources */,
 			);

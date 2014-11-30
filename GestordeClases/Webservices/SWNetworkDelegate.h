@@ -7,6 +7,7 @@
 //
 
 @class Student;
+@class Classes;
 #import <Foundation/Foundation.h>
 
 @protocol SWNetworkDelegate <NSObject>
@@ -16,5 +17,7 @@
 
 @optional
 -(void)receiveStudent:(Student *)aStudent;
+-(void)receiveClasses:(Classes *)aClasses;
+-(void)receiveAllClasses:(NSMutableArray *)aClasses;
 
 @end
